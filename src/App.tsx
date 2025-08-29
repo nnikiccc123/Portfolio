@@ -1,23 +1,30 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from './Navbar'
-import Home from './Home'
+import { useState } from "react";
+import "./App.css";
+import Navbar from "./Navbar";
+import Home from "./Home";
+import AboutMe from "./AboutMe";
 
 function App() {
-  // State za jezik
-  const [language, setLanguage] = useState<'sr' | 'en'>('sr')
+  const [language, setLanguage] = useState<"sr" | "en">("sr");
 
   return (
-    <>
-      <div className="App">
-        {/* Prosleđujemo jezik i funkciju za menjanje jezika */}
-        <Navbar language={language} setLanguage={setLanguage} />
+    <div className="App">
+      <Navbar language={language} setLanguage={setLanguage} />
 
-        {/* Prosleđujemo jezik u Home da menja tekstove */}
+      <section id="home">
         <Home language={language} />
-      </div>
-    </>
-  )
+      </section>
+
+      <section id="about">
+        <AboutMe language={language} />
+      </section>
+
+      {/* Kasnije možeš dodati sekcije za Resume/CV, Projects, Contact */}
+      {/* <section id="resume">...</section>
+          <section id="projects">...</section>
+          <section id="contact">...</section> */}
+    </div>
+  );
 }
 
-export default App
+export default App;

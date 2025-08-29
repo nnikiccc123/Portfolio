@@ -1,0 +1,81 @@
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 80px 20px;
+  background-color: rgba(12, 78, 84, 0.619);
+  color: #f0e5d4;
+  text-align: center;
+}
+
+.about-me h2 {
+  font-family: "Relindo", cursive;
+  font-size: 60px;
+  margin: 0;
+  letter-spacing: 5px;
+  transition: transform 0.5s ease;
+}
+
+.about-me h2:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.about-me p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+.about-facts {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fact {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  flex: 1;
+  min-width: 120px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: default;
+}
+
+.fact:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.fact .icon {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .about-me h2 {
+    font-size: 40px;
+  }
+
+  .about-me p {
+    font-size: 18px;
+  }
+
+  .about-facts {
+    gap: 15px;
+  }
+
+  .fact {
+    padding: 15px;
+  }
+
+  .fact .icon {
+    font-size: 25px;
+  }
+}
