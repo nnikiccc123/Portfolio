@@ -16,32 +16,31 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ language }) => {
   return (
     <section className="hero">
-      {/* leva strana */}
       <div className="hero-left">
         <img src={hero} alt="Natalija Nikic" />
       </div>
 
-      {/* desna strana */}
       <div className="hero-right">
         <h1 className="hero-title">PORTFOLIO</h1>
         <p className="hero-name">Natalija Nikić</p>
 
         <div className="hero-details">
-          {/* leva kolona */}
           <div className="hero-socials">
             <p>
-              <FaPhone className="icon" /> +381654102665
+              <a href="tel:+381654102665" className="hero-socials">
+                <FaPhone className="icon" /> +381654102665
+              </a>
             </p>
             <p>
-              <FaEnvelope className="icon" /> nnikiccc123@gmail.com
+              <a href="mailto:nnikiccc123@gmail.com" className="hero-socials">
+                <FaEnvelope className="icon" /> nnikiccc123@gmail.com
+              </a>
             </p>
             <p>
               <FaMapMarkerAlt className="icon" />{" "}
               {language === "sr" ? "Beograd, 11000" : "Belgrade, 11000"}
             </p>
           </div>
-
-          {/* desna kolona */}
           <div className="hero-links">
             <p>
               <a

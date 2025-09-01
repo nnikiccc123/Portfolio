@@ -60,7 +60,7 @@
 /* Mobile screens */
 @media (max-width: 768px) {
   .about-me h2 {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .about-me p {

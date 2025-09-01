@@ -3,6 +3,8 @@ import "./App.css";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import AboutMe from "./AboutMe";
+import Resume from "./Resume";
+import Projects from "./Projects";
 
 function App() {
   const [language, setLanguage] = useState<"sr" | "en">("sr");
@@ -19,10 +21,13 @@ function App() {
         <AboutMe language={language} />
       </section>
 
-      {/* Kasnije možeš dodati sekcije za Resume/CV, Projects, Contact */}
-      {/* <section id="resume">...</section>
-          <section id="projects">...</section>
-          <section id="contact">...</section> */}
+      <section id="resume">
+        <Resume language={language} />
+      </section>
+
+      <section id="projects">
+        <Projects language={language} />
+      </section>
     </div>
   );
 }

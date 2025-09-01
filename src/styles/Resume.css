@@ -1,0 +1,224 @@
+.resume-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./background - Copy.jpg");
+  background-size: cover;
+}
+
+.timeline-resume {
+  max-width: 100%;
+  width: 70%;
+  margin: 50px auto;
+  padding: 0 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #f0e5d4;
+}
+
+.timeline-resume h2 {
+  font-family: "Relindo", cursive;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 5px;
+  transition: transform 0.5s ease;
+}
+
+.timeline-resume h2:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.timeline {
+  position: relative;
+  margin-left: 20px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: rgba(21, 124, 134, 0.785);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 50px;
+}
+
+.timeline-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.timeline-header:hover {
+  transform: translateX(5px);
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -23px;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 14px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.timeline-header:hover .timeline-icon {
+  transform: rotate(90deg);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.timeline-header h3 {
+  margin: 15px;
+  font-size: 20px;
+}
+
+.company-period {
+  margin: 15px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.timeline-details {
+  margin-top: 10px;
+  background: rgba(21, 124, 134, 0.3);
+  padding: 15px;
+  border-radius: 10px;
+  animation: slideDown 0.3s ease forwards;
+  font-size: 15px;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timeline-education {
+  margin-top: 40px;
+}
+
+.timeline-education h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.timeline-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.education-item {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 12px 18px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+.skills-section {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: nowrap;
+}
+
+.skills-card {
+  flex: 1 1 500px;
+  max-width: 500px;
+  background: rgba(21, 124, 134, 0.3);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: default;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+  background: rgba(21, 124, 134, 0.5);
+}
+
+.skill-icon {
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.skills-card h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.skills-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-card li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #f0e5d4;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .timeline-header {
+    font-size: 16px;
+    padding: 6px 0;
+  }
+
+  .timeline-header h3 {
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  .company-period {
+    font-size: 12px;
+    margin: 3px 0;
+  }
+
+  .timeline-icon {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    left: -18px; /* prilagodi poziciju ikone */
+  }
+
+  .timeline-education {
+    font-size: 16px;
+    padding: 6px 0;
+  }
+
+  .skills-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .skills-section {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
