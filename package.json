@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/nnikiccc123/Portfolio.git",
+  "homepage": "https://github.com/nnikiccc123/Portfolio",
   "name": "portfolio-app",
   "private": true,
   "version": "0.0.0",
@@ -27,7 +27,7 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "gh-pages": "^6.3.0",
     "globals": "^16.3.0",
-    "typescript": "~5.8.3",
+    "typescript": "^5.9.2",
     "typescript-eslint": "^8.39.1",
     "vite": "^7.1.2"
   }
