@@ -9,12 +9,12 @@ interface AboutMeProps {
 const AboutMe: React.FC<AboutMeProps> = ({ language }) => {
   return (
     <section className="about-me">
-      <h2>{language === "sr" ? "O Meni" : "About Me"}</h2>
+      <h2>{language === "sr" ? "O meni" : "About me"}</h2>
       <p>
         {language === "sr" ? (
           <>
             Zdravo! Ja sam <strong>Natalija Nikić</strong>. Završila sam
-            Fakultet organizacionih tehnologija, smer Informacioni sistemi i
+            Fakultet organizacionih nauka, smer Informacioni sistemi i
             tehnologije. Kreativna sam osoba i želim da nastavim da se razvijam
             u IT-ju. Najviše me zanima Front-End razvoj i UI/UX, ali sam spremna
             da probam i druge oblasti u IT-ju.
@@ -22,11 +22,10 @@ const AboutMe: React.FC<AboutMeProps> = ({ language }) => {
         ) : (
           <>
             Hi! I'm <strong>Natalija Nikić</strong>. I graduated from the
-            Faculty of Organizational Technologies, majoring in Information
-            Systems and Technologies. I'm a creative person and I want to
-            continue developing my skills in IT. I'm mostly interested in
-            Front-End development and UI/UX, but I'm also ready to try other
-            areas in IT.
+            Faculty of Organizational Sciences, majoring in Information Systems
+            and Technologies. I'm a creative person and I want to continue
+            developing my skills in IT. I'm mostly interested in Front-End
+            development and UI/UX, but I'm also ready to try other areas in IT.
           </>
         )}
       </p>

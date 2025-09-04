@@ -14,12 +14,13 @@ interface ProjectsProps {
 const Projects: React.FC<ProjectsProps> = ({ language }) => {
   const projects: Project[] = [
     {
-      title: language === "sr" ? "Sitcom Mix or Match" : "Sitcom Mix or Match",
+      title:
+        language === "sr" ? "Map Distance Tracker" : "Map Distance Tracker",
       description:
         language === "sr"
-          ? "Igra memorije sa temama serija Friends, The Modern Family i The Office, sa zvukovima i animacijama."
-          : "Memory game with themes from Friends, The Modern Family, and The Office, including sounds and animations.",
-      link: "#",
+          ? "Projekat koristi HTML, CSS, JavaScript, Leaflet.js i Google Maps tiles, i omogućava korisnicima da postavljaju tačke na mapu jednim klikom, povezuju ih linijama, izračunavaju razdaljine, brišu poslednju tačku desnim klikom, završavaju putanju dvostrukim klikom i brišu sve tačke."
+          : "The project uses HTML, CSS, JavaScript, Leaflet.js, and Google Maps tiles, allowing users to place points on the map with a single click, connect them with lines, calculate distances, remove the last point with a right-click, finish a path with a double-click, and clear all points.",
+      link: "https://nnikiccc123.github.io/MapDistanceTracker/",
     },
     {
       title: language === "sr" ? "Projekat 2" : "Project 2",

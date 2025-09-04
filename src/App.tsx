@@ -5,6 +5,7 @@ import Home from "./Home";
 import AboutMe from "./AboutMe";
 import Resume from "./Resume";
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 function App() {
   const [language, setLanguage] = useState<"sr" | "en">("sr");
@@ -27,6 +28,9 @@ function App() {
 
       <section id="projects">
         <Projects language={language} />
+      </section>
+      <section id="contact">
+        <Contact language={language} />
       </section>
     </div>
   );

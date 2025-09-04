@@ -1,0 +1,140 @@
+.contact-section {
+  width: 100vw; /* cela širina ekrana */
+  min-height: 100vh; /* minimalna visina = visina ekrana */
+  background-color: rgba(12, 78, 84, 0.619); /* tvoja polutransparentna boja */
+}
+/* Container bez bele pozadine, transparent ili u skladu sa portfolio bojama */
+.contact-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  border-radius: 15px;
+  background-image: url("../assets/background.jpg");
+  background-size: cover; /* slika prekriva celu površinu */
+  background-position: center; /* centrirana slika */
+  background-repeat: no-repeat; /* ne ponavlja se */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+/* Naslov */
+.contact-title {
+  font-family: "Relindo", cursive;
+  font-size: 60px;
+  margin: 0 0 40px 0; /* vrh 0, dno 40px */
+  letter-spacing: 5px;
+  text-align: center; /* centrira tekst */
+  transition: transform 0.5s ease;
+  color: #fff; /* boja teksta */
+}
+
+.contact-title:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+/* Form fields */
+.contact-container .form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #ddd;
+}
+
+/* Input i textarea */
+.contact-container input,
+.contact-container textarea {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.contact-container input::placeholder,
+.contact-container textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Textarea specifično */
+.contact-container textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Dugme */
+.contact-container button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(
+    135deg,
+    rgba(21, 124, 134, 0.785),
+    rgba(21, 124, 134, 0.785)
+  );
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-container button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(108, 99, 255, 0.3);
+}
+
+/* Status poruka */
+.status-message {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #6c63ff;
+}
+
+/* Responsive dizajn */
+@media (max-width: 768px) {
+  .contact-container {
+    margin: 30px 20px;
+    padding: 25px 15px;
+  }
+
+  .contact-title {
+    font-size: 50px;
+  }
+
+  .contact-container input,
+  .contact-container textarea {
+    font-size: 0.95rem;
+  }
+
+  .contact-container button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 20px 10px;
+  }
+
+  .contact-container h2 {
+    font-size: 1.4rem;
+  }
+}
