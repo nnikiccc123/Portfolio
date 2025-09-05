@@ -23,12 +23,33 @@ const Projects: React.FC<ProjectsProps> = ({ language }) => {
       link: "https://nnikiccc123.github.io/MapDistanceTracker/",
     },
     {
-      title: language === "sr" ? "Projekat 2" : "Project 2",
+      title: language === "sr" ? "eKnjizica" : "eKnjizica",
+      description:
+        language === "sr"
+          ? "eKnjizica je veb aplikacija za online čitanje knjiga razvijena uz HTML, CSS i JavaScript sa modernim bibliotekama i animacijama. Aplikacija simulira prikaz knjiga i korisničko iskustvo."
+          : "eKnjizica is a web app for online book reading built with HTML, CSS, and JavaScript using modern libraries and animations. The application simulates the display of books and the user experience.",
+      link: "https://nnikiccc123.github.io/eKnjizica/",
+    },
+    {
+      title: language === "sr" ? "Imposter" : "Imposter",
+      description:
+        language === "sr"
+          ? "U ovom mini projektu sam razvila multiplayer igru u kojoj jedan igrač postaje “imposter”, dok ostali dobijaju istu reč. Igrači naizmenično daju asocijacije ili slične pojmove, a impostor pokušava da se uklopi i ne otkrije da ne zna pravu reč. Igra je izrađena korišćenjem HTML-a, CSS-a i JavaScript-a, sa modernim, responzivnim dizajnom i animacijama okretanja kartica."
+          : "In this mini project, I developed multiplayer game where one player becomes the “imposter,” while the others receive the same word. Players take turns giving hints or related words, and the imposter must blend in without revealing they don’t know the correct word. The game is built with HTML, CSS, and JavaScript, featuring a modern, responsive design with card-flip animations.",
+      link: "https://nnikiccc123.github.io/Imposter/",
+    },
+    {
+      title: language === "sr" ? "Projekat 4" : "Projekat 4",
       description: language === "sr" ? "" : "",
       link: "#",
     },
     {
-      title: language === "sr" ? "Projekat 3" : "Project 3",
+      title: language === "sr" ? "Projekat 4" : "Projekat 4",
+      description: language === "sr" ? "" : "",
+      link: "#",
+    },
+    {
+      title: language === "sr" ? "Projekat 4" : "Projekat 4",
       description: language === "sr" ? "" : "",
       link: "#",
     },

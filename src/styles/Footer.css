@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+  background-color: rgba(21, 124, 134, 0.785);
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-icon {
+  color: #fff;
+  font-size: 24px;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.footer-icon:hover {
+  color: rgba(255, 255, 255, 0.785); /* promeni boju hover efekta */
+  transform: scale(1.2);
+}
