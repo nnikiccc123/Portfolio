@@ -2,6 +2,7 @@
   width: 100vw; /* cela širina ekrana */
   min-height: 100vh; /* minimalna visina = visina ekrana */
   background-color: rgba(12, 78, 84, 0.619); /* tvoja polutransparentna boja */
+  bottom: 0;
 }
 /* Container bez bele pozadine, transparent ili u skladu sa portfolio bojama */
 .contact-container {

@@ -39,9 +39,12 @@ const Projects: React.FC<ProjectsProps> = ({ language }) => {
       link: "https://nnikiccc123.github.io/Imposter/",
     },
     {
-      title: language === "sr" ? "Projekat 4" : "Projekat 4",
-      description: language === "sr" ? "" : "",
-      link: "#",
+      title: language === "sr" ? "Mix or Match" : "Mix or Match",
+      description:
+        language === "sr"
+          ? "Mix or Match je interaktivna igra memorije u kojoj igrači okreću kartice da bi pronašli parove. Igra prati vreme i broj poteza, a uspešan spoj parova prati animacija i zvučni efekti. Projekat ima responzivni dizajn za mobilne i desktop uređaje, pozadinsku muziku i zvuke interakcije. Korišćene tehnologije su HTML, CSS, JavaScript, Audio API."
+          : "Mix or Match is an interactive memory game where players flip cards to find matching pairs. The game tracks time and number of moves, with animations and sound effects for successful matches. The project features a responsive design for both mobile and desktop, as well as background music and interactive sounds. Technologies used: HTML, CSS, JavaScript, Audio API.",
+      link: "https://nnikiccc123.github.io/MixOrMatch/main.html",
     },
     {
       title: language === "sr" ? "Projekat 4" : "Projekat 4",
